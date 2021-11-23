@@ -1,0 +1,475 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- <link  href="./css/bootstrap.css" rel="stylesheet" /> -->
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@700&display=swap" rel="stylesheet">
+       <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
+
+    <title> VoguePay Clone</title>
+  </head>
+  <body>
+        <style>
+
+          body:before{display: block; 
+            box-sizing: border-box;
+            
+          }
+          .pop{
+
+            font-family: 'Poppins', sans-serif;
+          }
+          .nun{
+            font-family: 'Nunito', sans-serif;
+          }
+          .lbg{
+            background: linear-gradient(
+            225deg, rgb(0, 196, 249) 0%,
+            rgb(100, 217, 255) 100%,
+             rgb(255, 255, 255) 100%);   
+
+          }
+          
+          .btn:hover { 
+            background: linear-gradient(
+            225deg, rgb(0, 196, 249) 0%, rgb(100, 217, 255) 100%, rgb(255, 255, 255) 100%);
+            border: none;
+            box-shadow: rgb(255 255 255 / 30%) 0px 0px 0px 0px;
+            color: rgb(255, 255, 255) !important;
+            
+          } 
+          
+          .link{
+            font-size: 13.8px; 
+            color: #9A9FBF;
+            padding-left: 50px;
+
+
+          }
+          .link:hover{
+            color: rgb(6, 14, 76) ;
+          }
+          .image{
+            width: 100%;
+            height: 40rem;
+            background: linear-gradient(
+              373deg,rgb(38, 60, 139)0% , rgb(6, 14, 76) 67%,rgb(255, 255, 255)39%);
+          } 
+
+          .bg-image {
+            background-image: url("Images/background_img.svg");
+            background-position: right;
+            background-size: 80%; 
+            height: 700px;
+            background-repeat: no-repeat;
+          
+          }
+          .ceo {
+            width: 70%;
+            height: 440px;
+            background-image: url("Images/ceo_img.png");            
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            margin-left: 150px;
+            position: relative;
+        }
+        .ceo_bkg {
+            width: 100%;
+            height: 440px;            
+            background-image: linear-gradient(to right,rgba(22, 37, 107, 1) 63.22%, rgba(22, 37, 108, 0) 112.68%);
+            margin-left: 0px;    
+            position: absolute; 
+            
+            border-radius: 10px;   
+
+            
+          }
+        .quote {
+            width: 45%;
+            position: absolute;
+            z-index: 99;
+            font-size: 16px;
+        }  
+        
+      .template_area{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr 4fr;
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+        
+      }
+      
+        
+    </style>
+
+    <!-- Navigation bar -->
+
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <div class="collapse navbar-collapse" id="">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          
+              
+        </div>
+      </div>
+    </nav>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <!-- <div class="collapse navbar-collapse" id="#vtoggle">
+           <div  class="d-flex  fixed-top my-3" style="padding: 0px 54.806px" id="top" >
+            <div class=" me-5"> <img src="Images/Voguepay Logo.svg" class="img-fluid" width="163.92"/> </div> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#vtoggle"
+             aria-controls="#vtoggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" ms-5 mx-4 my-2" id="vtoggle" >
+              <a class="link text-decoration-none nun fw-bold  px-4"  href="#">About us </a>  
+              <a class="link text-decoration-none nun  fw-bold px-4"  href="#">Developers</a>  
+              <a class="link text-decoration-none nun  fw-bold px-4" href="#">Pricing</a>   
+              <a class="link text-decoration-none nun  fw-bold px-4"  href="#">Contact</a> 
+               
+            </div>
+             
+           <div class= "ms-auto" >
+            <button class="btn text-light btn-md nun fw-bold rounded-3 me-3" type="button"
+             style="background-color:rgb(6,14, 76) ">Login</button>
+            <button  class="btn fw-bold text-dark btn-md bg-white nun rounded-3 "> Register </button>
+           </div>
+          </div>
+       -->
+   
+
+    <!-- Upper Section -->
+
+    <section>
+      
+    <div class="container-fluid bg-image"style="color:rgb(6,14, 76) ">
+      <h1 class = "fw-bold pop" style="padding-top: 180px; padding-left: 100px; font-size: 60.8px">Do</h1>
+      <h1 class = "fw-bold pop" style="font-size: 60.8px; padding-left: 100px">It All</h1>
+      <h1 class = "fw-bold pop" style="font-size: 60.8px; padding-left: 100px">Big</h1>
+      <p class="fs-5 fw-bold w-75 nun text-dark" style="padding-left: 100px; font-size: 20px;">
+        VoguePay makes it easy to collect money from customers<br>
+         worldwide, even for one-off or variable amounts.</p>
+      <div style="padding-left:100px;">
+          <button class="btn btn-lg nun text-light pt-2"
+           style="background-color:rgb(5, 29, 116)">
+           Get Started
+          </button>
+          <button class="btn btn-md nun btn-outline pt-2 ms-2"
+          style="color:rgb(5, 29, 116)"> 
+          <a href="#" class=" text-decoration-none" > 
+            Contact Sales <span> <img src="Images/arrow-front icon.svg" /> </span> </a>           
+          </button>
+      </div>
+      
+    </div>
+      
+    </section> 
+    <!-- Next Section -->
+
+    <section>
+      <div class="d-flex pb-5"  >
+      
+        <div> <img src="Images/Overview.png" width= 549px height="560px"/> </div> 
+
+        <div style="margin-top: 150px; padding-left: 40px; padding-right: 200px;">
+          <h1 class="pop fw-bold"
+              style= " font-size: 48px; color: rgb(6, 14, 76)">
+           We built an excellent platform to help your business scale faster
+          </h1>
+          <p class="text-dark nun fs-4 fw-bold">
+            Voguepay empowers businesses in Africa to achieve greater heights in their industry.
+          </p>
+          <button class="btn bg-white btn-lg mt-3 fw-bold nun rounded-3"
+            style="color:rgb(6,14, 76)">
+            <a href="#down" class=" text-decoration-none" > 
+              Contact our Sales Team  <span> <img src="Images/arrow-front icon.svg" /> </span> </a>   
+          </button> 
+        </div>
+        
+      </div>
+    </section>
+
+       <!-- From Ceo Background Image -->
+        <div class=" mt-5 ceo">
+              <div class="ceo_bkg"></div>
+              <div class="d-flex flex-column text-light justify-content-center align-items-center pt-5 ps-4 quote">
+                  <h3 class="ps-3" style="font-size: 30px; line-height: 2.5rem;">
+                   “There's an enormous sense of teamwork. 
+                    We are building a company together. 
+                    It's not just your single contribution, 
+                    we all take pride in how we bring the company forward.”
+                  </h3>
+                <div class = "d-flex p-3">
+              
+                    <a href="#"><img class="mt-2" width ="32px" height="32px"
+                    src="Images/video icon.svg"></a>
+                    <p class="ps-3 pb-5">Watch VoguePay CEO, Oyebode Oyegoke-Akande, 
+                    explain the value proposition of the company.</p>
+                </div>
+            </div>
+        </div>
+
+    <section class="container">
+
+        <div >
+          <h1 class="font-sans-serif text-center fw-bold mt-5 px-5 "
+          style= "font-size: 51.6px; color:rgb(6,14, 76)">
+
+            We provide lasting solutions for modern businesses
+          
+          </h1> 
+        </div>
+        <p class="fs-5 mt-4 text-center px-5"> 
+          At Voguepay, we work as a team across cultures and time
+          zones because we believe the goal of the team trumps individual
+          accomplishments. Recieve money and make payments locally with our
+          fast and secure APIs and software solutions designed to help your
+          capture more revenue.
+        </p>
+      
+
+    </section>
+      
+
+  
+    <!-- Next Section (From fast payment) -->
+    <section class= "container">
+      
+        <div class="template_area py-5">
+
+          <div class="red"> <img src="Images/Fastpayment.svg"/> </div>
+          <div class="fast" >
+            <h4 class="fw-bold"> Fast Payments for all business</h4>
+            <p>
+              From e-commerce stores to subscription businesses, to platforms and marketplaces,
+              we offer a complete deck for all your payment needs across channels.
+
+            </p>
+
+          </div>
+          <div class="green"> <img src="Images/Getstarted.svg"/></div>
+          <div class="get">
+              <h4 class="fw-bold"> Get Started in minutes</h4>
+              <p>
+                Create an account online in minutes with our delightful integration.
+                We’ll deposit your funds directly into your bank account.
+              </p>
+          </div>
+          <div class="blue"> <img src="Images/Track your earning.svg"/> </div>
+          <div class="track">
+              <h4 class="fw-bold"> Track your earnings</h4>
+              <p>
+                Protect your business from fraud and increase
+                authorization rates on every transaction using our platform.
+              </p>
+
+          </div>
+          <div class="yellow"> <img src="Images/save globally.svg"/></div>
+          <div class="scale">
+            <h4 class="fw-bold"> Scale globally</h4>
+              <p>
+                With a platform optimized for multiple currencies and a
+                series of payment methods to choose from, Voguepay makes it easy to
+                launch new markets and add your customers’ preferred way
+                of paying to increase conversion abroad.
+              </p>
+            </div>
+
+
+        </div>
+          
+          
+
+    
+    </section>
+    <!--Next Section (From API) -->
+
+    <section Class="image"  >
+      
+      <div class="container d-flex " >
+        <div class="align-self-center " style="margin-left: 10%;">
+        <h3 class="pt-5"style="color:  rgb(100, 217, 255);">
+           Get familiar with our</br>
+            Robust and Dynamic API's
+          </h3> 
+        <p class="text-white pt-3">
+          Easily integrate our API’s
+          to securely accept online</br>  and mobile payments
+          
+        </p> 
+        <button class="btn lg border-secondary pt-2 text-white"> 
+          Read API implementation <span> <img src="Images/arrow-front icon.svg" /> </span>
+  
+        </button>
+        
+        </div>
+        <div class="mt-5 " style="margin-left:120px;"> 
+          
+          <img src="Images/democode.png" width="378.28px"/> 
+        </div>
+      </div>
+    
+    
+    </section>
+    
+
+     <!-- Last section -->
+
+      <section class="lbg"> 
+        
+        
+        <div class="d-flex align-items-center">
+        
+
+          <div> <img src="Images/Readyimage.png" class="img-fluid" width="260px"/> </div>
+
+          <div> <h1 class="text-white pe-5 fw-bold"> Ready to get started? </h1> </div>
+
+          <div>
+            <button class="btn text-light btn-md px-3 me-3 font-sans-serif rounded-3"
+            style="background-color:rgb(6,14, 76); margin-left:130px;">
+            Sign up
+            </button> <span class="btn fw-bold btn-md border-secondary font-sans-serif"
+            style="color:rgb(6,14, 76)"> 
+            Contact our Sales Team </span>
+          </div>
+
+        </div>
+
+      </section>
+
+      
+
+      
+
+    <!-- <footer> -->
+
+    <footer   style="background-color:#01152D;"> 
+
+      
+
+      <div class="container font-sans-serif text-white" id="down">
+        <div class="row py-5 g-2"> 
+          <div class="col-3"> 
+            <img src="Images/WhiteVogue Logo.svg" width="196.36"/>
+  
+            <p class="my-4"> Nigeria </p>
+    
+            <p> 33A, Abba Johnson Crescent, Akora Estate, off Adeniyi Jones, 101211, Ikeja </p>
+            <a class=" text-decoration-none link-light" href="#">+2340817900000 </a> 
+  
+            <p>United Kingdom </p>
+    
+            <p>
+               Level 39. One Canada square, Canary Wharf, London
+               E14 5AB, United Kingdom
+            </p>
+            <a class=" text-decoration-none link-light" href="#">+44(0)2036683701</a> 
+            
+          </div>
+  
+          <div class="col-2"> </div>
+  
+          <div class="col-2"> 
+            <h3 class="lead fw-bold">Voguepay </h3>
+            <ul class="list-unstyled py-3">
+              <li> <a class=" text-decoration-none link-light" href="#"> Home </a> </li>
+              <li> <a class=" text-decoration-none link-light"  href="#"> About </a> </li>
+              <li> <a class=" text-decoration-none link-light"  href="#"> Careers </a> </li>
+              <li>  <a class=" text-decoration-none link-light" href="#"> Our Team </a> </li>
+              <li> <a class=" text-decoration-none link-light" href="#"> Pricing </a> </li>
+              <li> <a class=" text-decoration-none link-light" href="#"> Blog </a> </li>
+              <li> <a class=" text-decoration-none link-light" href="#"> FAQ </a> </li>
+            </ul>
+  
+            
+          </div>
+  
+          <div class="col-2">
+            <h4 class="lead fw-bold"> Developers </h4>
+            <ul class="list-unstyled py-3">
+              <li> <a class=" text-decoration-none link-light"  href="#"> Documentation </a> </li>
+              <li> <a class=" text-decoration-none link-light"  href="#"> API References </a> </li>
+              <li> <a class=" text-decoration-none link-light"  href="#"> API Status </a> </li>
+            </ul>  
+            <ul class="list-unstyled py-3">
+  
+                <h4 class="lead fw-bold"> Products </h4>
+                <li>  <a class=" text-decoration-none link-light" href="#"> Personal </a> </li>
+                <li> <a class=" text-decoration-none link-light" href="#"> person </a> </li>
+            </ul>
+          </div>
+  
+          <div class="col-2">
+            <h4 class="lead fw-bold"> Contact </h4>
+            <ul class="list-unstyled py-3">
+              <li> <a class=" text-decoration-none link-light"  href="#"> Sales </a> </li>
+              <li> <a class=" text-decoration-none link-light" href="#"> Contact our Sales Team</a> </li>
+              <li> <a class=" text-decoration-none link-light"  href="#"> +2340817000000 </a> </li>
+            </ul>  
+            <ul class="list-unstyled py-3">
+  
+                <h4 class="lead fw-bold"> Support </h4>
+                <li>  <a class=" text-decoration-none link-light" href="#"> Privacy Policy </a> </li>
+                <li> <a class=" text-decoration-none link-light" href="#"> +44(0)2057787838 </a> </li>
+            </ul>  
+          </div>
+          <div class="col-2"> </div>
+          
+          <div class=" d-flex justify-content-between">
+  
+            <div> 
+              &copy; 2012-2021 Voguepay.
+              All Rights Reserved
+              <span> <a class=" text-decoration-none link-light" href="#"> 
+              |    Privacy   |   Terms </a></span> 
+            </div>
+       
+            <div >
+              <a class="px-2" href="#"> <img src="Images/fb.svg" width="32" /> </a>  
+              <a class="px-2" href="#"> <img src="Images/twitter.svg" width="32" /> </a>  
+              <a class="px-2" href="#"> <img src="Images/Insta.svg" width="32"/> </a>  
+              <a class="px-2" href="#"> <img src="Images/Linkedin.svg" width="32"/> </a>   
+               
+            </div>
+            
+            <div>  <a href="#top" class=" text-decoration-none link-light" > 
+              Back to top <img src="Images/arrow_upward_white_18dp.svg"/> </a>   </div>
+        </div>
+  
+        </div>
+        
+       
+
+     
+      
+    </footer>
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.js"></script>
+
+  </body>
+</html>
